@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cards.css">
+    <style>body{
+    background: linear-gradient(to right, rgb(150, 64, 64),rgb(18, 18, 110));
+}
+#card{
+    margin: 0px;
+    padding: 0px;
+}
+.cards{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px violet;
+    overflow: hidden;
+}
+#card1{
+z-index: 4;
+transform: translate(-50%,-50%);
+background-color: red;
+border-color: salmon;
+}
+#card2{
+    transform: translate(-50%,-50%) rotate(-8deg);
+    z-index: 3;
+    background-color: blue;
+    border-color: blueviolet;
+}
+#card3{
+     transform: translate(-50%,-50%) rotate(-16deg);
+      z-index: 2;
+      background-color: green;
+      border-color: royalblue;
+}
+#card4{
+     transform: translate(-50%,-50%) rotate(-24deg);
+     z-index: 1;
+     background-color: sienna;
+     border-color: gold;
+}
+#card1:hover{
+    z-index: 10;
+}
+#card2:hover{
+    z-index: 10;
+}
+#card3:hover{
+    z-index: 10;
+}
+#card4:hover{
+    z-index: 10;
+}
+img{
+    width: 250px;
+    height: 350px;
+}</style>
+</head>
+<body>
+<div id="card">
+    <div id="card1" class="cards">
+        <img src="babyimage_1.jpeg" alt="">
+    </div>
+    <div id="card2" class="cards">
+        <img src="babyimage_2.jpeg" alt="">
+    </div>
+    <div id="card3" class="cards">
+        <img src="babyimage_3.jpeg" alt="">
+    </div>
+    <div id="card4" class="cards">
+        <img src="babyimage_4.jpeg" alt="">
+    </div>
+</div>
+</body>
+</html>
